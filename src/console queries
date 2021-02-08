@@ -1,0 +1,21 @@
+INSERT INTO opskrifter (navn, opskrift, ingredienser)
+VALUES ('Småkager', 'bland ingredientser og læg på bageplade', 'Mel, chokolade, smør, bagepulver');
+INSERT INTO opskrifter (navn, opskrift, ingredienser)
+VALUES ('toast', 'put ingredientser mellem brød og varm indtil ost er smeltet', 'Brød, ost, skinke');
+INSERT INTO opskrifter (navn, opskrift, ingredienser)
+VALUES ('havregrød', 'hæld kogende vand over tørre havregryn', 'Havregryn, vand');
+
+SELECT ingredienser
+FROM opskrifter
+ORDER BY ingredienser ASC;
+
+UPDATE opskrifter
+SET navn = 'Pasta'
+WHERE id = 2;
+
+DELETE FROM opskrifter
+WHERE id = 4;
+
+SELECT * FROM opskrifter
+ORDER BY navn ASC;
+
